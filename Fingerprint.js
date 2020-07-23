@@ -1,8 +1,8 @@
 define(['knockout'],
 function(ko) {
   //put this function in the page you want activate fingerprint "common in first page"
- function Fingerprint() {
-                   
+ function Finger_print() {
+      self.FingerPrint=function(){             
       FingerprintAuth.isAvailable(function (result) {
 
        console.log("FingerprintAuth available: " + JSON.stringify(result));
@@ -47,10 +47,10 @@ function(ko) {
                         console.log("isAvailableError(): " + message);
                     });
                 }
-
+             
         self.connected = function() {
           // call function here to to activate it once the user access this page
-           Fingerprint();
+           FingerPrint();
              };
                               
         self.disconnected = function() {
@@ -63,6 +63,6 @@ function(ko) {
                         }
 
                         
-        return Fingerprint
+        return Finger_print
             }
             );
