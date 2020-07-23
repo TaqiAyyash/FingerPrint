@@ -1,5 +1,4 @@
 # FingerPrint
-# Fingerprint
 This code to add a Fingerprint function in your hybrid mobile Application using Oracle Jet
 Steps:
 1. install Node.JS
